@@ -1,0 +1,6 @@
+{
+  "name": "Project Limitless",
+  "description": "The ultimate preparation app for Mahanagar Entrance Test (MET). Features 1,100 real-syllabus questions (11 complete sets), detailed step-by-step hand calculation assistants, repeating exam patterns, and strict 90-minute realistic exam simulations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

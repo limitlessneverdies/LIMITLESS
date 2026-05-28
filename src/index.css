@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-gold-brand: #D4AF37;
+  --color-dark-bg: var(--bg-primary);
+  --color-dark-sidebar: var(--bg-sidebar);
+  --color-dark-card: var(--bg-card);
+  --color-dark-hover: var(--bg-hover);
+  --color-dark-border: var(--border-primary);
+  --color-text-muted: var(--text-muted);
+  --color-text-bright: var(--text-bright);
+}
+
+:root {
+  --bg-primary: #0A0A0C;
+  --bg-sidebar: #0F0F12;
+  --bg-card: #121216;
+  --bg-hover: #1A1A1F;
+  --border-primary: #222226;
+  --text-muted: #8E8E93;
+  --text-bright: #F2F2F7;
+}
+
+:root.light {
+  --bg-primary: #F2F2F7;
+  --bg-sidebar: #FFFFFF;
+  --bg-card: #E5E5EA;
+  --bg-hover: #D1D1D6;
+  --border-primary: #C7C7CC;
+  --text-muted: #55555A;
+  --text-bright: #1C1C1E;
+}
+

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Safeguard against iframe/sandbox environments where window.fetch has only a getter
+      try {
+        if (typeof window !== 'undefined' && 'fetch' in window) {
+          const originalFetch = window.fetch;
+          let customFetch = originalFetch;
+          Object.defineProperty(window, 'fetch', {
+            get() {
+              return customFetch;
+            },
+            set(val) {
+              customFetch = val;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        }
+      } catch (e) {
+        console.warn("Redefining window.fetch failed:", e);
+      }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Limitless - Mahanagar Entrance Test (MET) Portal</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
